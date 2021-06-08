@@ -1,9 +1,12 @@
 import React from 'react'
+import FormSection from '../components/formSection'
+import Navbar from '../components/navbar'
 
 const Login = () => {
     return (
         <div>
-          <h1>Login</h1>  
+          <Navbar />
+          <FormSection />  
         </div>
     )
 }
