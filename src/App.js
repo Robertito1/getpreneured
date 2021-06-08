@@ -12,7 +12,7 @@ function App() {
     <div className="App">
        <Switch>
           <Route exact path="/" render={() => <Login />} />
-          <Route exact path="/signUp" component={() => <SignUp />} /> 
+          <Route exact path="/signup" component={() => <SignUp />} /> 
           <Route exact path="/select-service" component={() => <SelectService />} /> 
           <Route exact path="/dashboard" component={() => <Dashboard />} /> 
       </Switch>

@@ -3,7 +3,7 @@ import React from 'react'
 const SelectService = () => {
     return (
         <div>
-          <h1>SelectService</h1>  
+          <h1 className='text-4xl'>SelectService</h1>  
         </div>
     )
 }
