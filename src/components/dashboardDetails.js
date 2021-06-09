@@ -1,5 +1,6 @@
 import React from 'react'
 import DetailCard from './detailCard'
+import Spendometer from './spendometer'
 
 const DashboardDetails = () => {
     return (
@@ -30,7 +31,7 @@ const DashboardDetails = () => {
                     <div className='flex justify-between'>
                         <div>
                             <p className='primary-font text-base text-purp font-bold'>SAVINGS ACCOUNT</p>
-                            <p className='primary-font text-base dashboard-side-text'>SUN ACCOUNT - 12346789</p>
+                            <p className='primary-font text-base dashboard-side-text'>SUB ACCOUNT - 12346789</p>
                         </div>
                         <div className='p-2 bg-black'>
                         <p>$</p>
@@ -39,8 +40,14 @@ const DashboardDetails = () => {
                     <p className='primary-font mt-14 text-3xl text-purp font-semibold'>N39,342</p>
                 </div>
            </div>
-           <div className='flex'>
-
+           <div className=''>
+                <div className='p-4 bg-white rounded w-6/12'>
+                    <p className='primary-font text-base text-purp font-bold'>Cash outflow</p>
+                    <Spendometer item='Bank Fees' progress='w-11/12'/>
+                    <Spendometer item='Internet' progress='w-8/12'/>
+                    <Spendometer item='Marketing' progress='w-4/12'/>
+                    <Spendometer item='Transfer' progress='w-3/12'/>
+                </div>
            </div>
         </div>
     )
