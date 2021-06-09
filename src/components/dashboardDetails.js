@@ -39,6 +39,9 @@ const DashboardDetails = () => {
                     <p className='primary-font mt-14 text-3xl text-purp font-semibold'>N39,342</p>
                 </div>
            </div>
+           <div className='flex'>
+
+           </div>
         </div>
     )
 }
