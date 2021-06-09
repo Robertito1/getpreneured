@@ -1,5 +1,6 @@
 import React from 'react'
 import FormSection from '../components/formSection'
+import LoginForm from '../components/loginForm'
 import Navbar from '../components/navbar'
 
 const Login = () => {
@@ -12,7 +13,9 @@ const Login = () => {
     return (
         <div>
           <Navbar data={data}/>
-          <FormSection color={data.color}/>  
+          <FormSection color={data.color}> 
+            <LoginForm />
+          </FormSection> 
         </div>
     )
 }
