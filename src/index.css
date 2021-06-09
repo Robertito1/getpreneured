@@ -10,3 +10,23 @@
 .navIcon{
   font-family: 'Poppins', sans-serif;
 }
+
+.box-shadow{
+  box-shadow: 5px 0px 15px 1px #cacaca;
+}
+
+.purple{
+  background-color: #150a33;
+}
+
+.text-purp{
+  color: #150a33
+}
+
+.dashboard-side-text{
+ color: #999696
+}
+
+.dashboard-background{
+  background-color: #dddbdb;
+ }
