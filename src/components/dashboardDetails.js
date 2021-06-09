@@ -12,9 +12,14 @@ const DashboardDetails = () => {
            <div className='flex justify-between mb-6'>
                <div>
                 <p className='primary-font text-2xl text-purp font-bold'>Welcome back Kathy</p>
-                <p className='primary-font text-xl text-purp font-semibold'>Here's what has been happening in the last 7 days</p>
+                <span className='primary-font text-xl text-purp font-semibold'>
+                    Here's what has been happening in the last
+                    <a href='#' className='ml-1 text-pink-600 underline'>
+                     7 days
+                    </a>
+                </span>
                </div>
-               <button className='rounded bg-pink-600 px-4 text-white'>
+               <button className='rounded bg-pink-600 px-4 text-white h-10'>
                    Add a sub account
                </button>
            </div>

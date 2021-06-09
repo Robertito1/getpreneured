@@ -24,6 +24,7 @@ const DashboardSideNav = () => {
                <p className='cursor-pointer mb-8 hover:text-purple-900'>Security</p>
                <p className='cursor-pointer mb-8 hover:text-purple-900'>Support</p>
            </div>
+           <p className='absolute bottom-0 left-0 m-8 primary-font text-3xl dashboard-side-text'>prospa</p>
         </div>
     )
 }
