@@ -37,7 +37,7 @@ const DashboardSideNav = () => {
                {'\u00A0'} Invoice</p>
                <p className='cursor-pointer mb-8 hover:text-purple-900'>
                <FontAwesomeIcon icon={faTasks} />
-               {'\u00A0'} Prospects</p>
+               {'\u00A0'} Management</p>
                <p className='cursor-pointer mb-8 hover:text-purple-900'>
                <FontAwesomeIcon icon={faShieldAlt} />   
                {'\u00A0'} Security</p>
