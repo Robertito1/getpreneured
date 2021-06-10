@@ -5,8 +5,8 @@ import SignUpForm from '../components/signUpForm'
 
 const SignUp = () => {
   const data = {
-    color: 'purple',
-    question: 'Already have an account?',
+    color: 'cyan',
+    question: 'Already a member?',
     action: 'Sign In',
     url: '/'
   }

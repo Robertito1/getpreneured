@@ -5,7 +5,7 @@ import Navbar from '../components/navbar'
 
 const Login = () => {
     const data = {
-      color: 'cyan',
+      color: 'purple',
       question: 'Don\'t have an account?',
       action: 'Sign Up',
       url: '/signup'

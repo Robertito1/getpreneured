@@ -6,9 +6,9 @@ import SelectServiceForm from '../components/selectServiceForm'
 const SelectService = () => {
   const data = {
     color: 'cyan',
-    question: 'Don\'t have an account?',
-    action: 'Sign Up',
-    url: '/signup'
+    question: 'Already a member?',
+    action: 'Sign in',
+    url: '/'
   }
     return (
         <div>
