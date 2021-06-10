@@ -5,7 +5,7 @@ import { data } from '../utils/data';
 const MonthSummary = () => {
     
     return (
-        <div className='p-4 bg-white rounded w-7/12'>
+        <div className='shadow-md p-4 bg-white rounded w-7/12'>
             <Line data={data} />
         </div>
     )

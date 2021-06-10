@@ -3,7 +3,7 @@ import Spendometer from './spendometer'
 
 const CashOutflow = () => {
     return (
-        <div className='ml-4 p-4 bg-white rounded w-5/12'>
+        <div className='shadow-md ml-4 p-4 bg-white rounded w-5/12'>
             <p className='primary-font text-base text-purp font-bold'>Cash outflow</p>
             <Spendometer item='Bank Fees' progress='w-11/12'/>
             <Spendometer item='Internet' progress='w-8/12'/>

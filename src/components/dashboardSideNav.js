@@ -1,4 +1,13 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { 
+    faMagic,
+    faReceipt,
+    faTasks,
+    faFileInvoiceDollar,
+    faUsers,
+    faShieldAlt
+     } from '@fortawesome/free-solid-svg-icons'
 
 const DashboardSideNav = () => {
     return (
@@ -17,12 +26,24 @@ const DashboardSideNav = () => {
                 </select>
            </div>
            <div className='primary-font text-xl dashboard-side-text flex flex-col'>
-               <p className='cursor-pointer mb-8 hover:text-purple-900'>Transactions</p>
-               <p className='cursor-pointer mb-8 hover:text-purple-900'>Prospects</p>
-               <p className='cursor-pointer mb-8 hover:text-purple-900'>Invoice</p>
-               <p className='cursor-pointer mb-8 hover:text-purple-900'>Managment</p>
-               <p className='cursor-pointer mb-8 hover:text-purple-900'>Security</p>
-               <p className='cursor-pointer mb-8 hover:text-purple-900'>Support</p>
+               <p className='cursor-pointer mb-8 hover:text-purple-900'>
+               <FontAwesomeIcon icon={faFileInvoiceDollar} />
+               {'\u00A0'} Transactions</p>
+               <p className='cursor-pointer mb-8 hover:text-purple-900'>
+               <FontAwesomeIcon icon={faUsers} />
+               {'\u00A0'} Prospects</p>
+               <p className='cursor-pointer mb-8 hover:text-purple-900'>
+               <FontAwesomeIcon icon={faReceipt} />  
+               {'\u00A0'} Invoice</p>
+               <p className='cursor-pointer mb-8 hover:text-purple-900'>
+               <FontAwesomeIcon icon={faTasks} />
+               {'\u00A0'} Prospects</p>
+               <p className='cursor-pointer mb-8 hover:text-purple-900'>
+               <FontAwesomeIcon icon={faShieldAlt} />   
+               {'\u00A0'} Security</p>
+               <p className='cursor-pointer mb-8 hover:text-purple-900'>
+               <FontAwesomeIcon icon={faMagic} /> 
+               {'\u00A0'} Support</p>
            </div>
            <p className='absolute bottom-0 left-0 m-8 primary-font text-3xl dashboard-side-text'>prospa</p>
         </div>
