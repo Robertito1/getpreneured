@@ -32,8 +32,8 @@ const LoginForm = () =>{
                         <Field 
                         type="text" 
                         name="firstName" 
-                        className='w-full border-solid border border-pink-600 rounded-md text-pink-600'
-                        placeholder='first'
+                        className='w-full border-solid border border-pink-600 rounded-md'
+                        placeholder='Firstname'
                         />
                         <ErrorMessage name="firstName" component="div" className='text-red-700 text-sm'/>
                     </div>
