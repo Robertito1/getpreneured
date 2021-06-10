@@ -1,14 +1,17 @@
 import React from 'react'
-import PhoneInput from 'react-phone-input-2'
-import 'react-phone-input-2/lib/style.css'
+import {Formik, Form, Field, ErrorMessage} from 'formik';
+import { useHistory } from 'react-router-dom'
+import * as yup from 'yup';
+
 
 
 const SignUpForm = () =>{
+    const history = useHistory()
     return (
         <div>
-            <p className='text-3xl text-purp'>Create your account</p>
-            <p className='dashboard-side-text'>There are various account types to choose from</p>
-            {/* <Formik
+            <p className='text-2xl text-purp font-bold'>Create your account</p>
+            <p className='dashboard-side-text mb-6'>There are various account types to choose from</p>
+            <Formik
                 initialValues={{ firstName: '', lastName: '', number: '', email: '', password: '' }}
                 validationSchema={yup.object({
                 firstName: yup.string()
@@ -22,7 +25,7 @@ const SignUpForm = () =>{
                 })}
                 onSubmit={(values, { setSubmitting }) => {
                     setTimeout(() => {
-                    alert(JSON.stringify(values, null, 2));
+                    history.push('/select-service')
                     setSubmitting(false);
                     }, 400);
                 }}
@@ -47,12 +50,12 @@ const SignUpForm = () =>{
                         />
                         <ErrorMessage name="lastName" component="div" className='text-red-700 text-sm'/>
                     </div>
-                    {/* <div className='mb-6'>
+                    <div className='mb-6'>
                         <Field
-                            label="number"
-                            placeholder="number"
+                            type="number"
                             name="number"
-                            component={}
+                            className='w-full input-shadow border-none rounded-md offwhite-background p-3 h-10 outline-none'
+                            placeholder='Phonenumber'
                         />
                         <ErrorMessage name="number" component="div" />
                     </div> 
@@ -65,12 +68,14 @@ const SignUpForm = () =>{
                            />
                         <ErrorMessage name="email" component="div" className='text-red-700 text-sm'/>
                     </div>
-                    <button type="submit" disabled={isSubmitting}>
-                        Submit
+                    <button type="submit" 
+                    disabled={isSubmitting} 
+                    className='rounded bg-pink-600 px-4 text-white h-10  focus:outline-none hover:text-pink-600 hover:bg-gray-400'>
+                        Next
                     </button>
                     </Form>
                 )}
-            </Formik> */}
+            </Formik>
     </div>
     )
 }

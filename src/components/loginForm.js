@@ -1,4 +1,4 @@
-import React, {useState}  from 'react';
+import React from 'react';
 import {Formik, Form, Field, ErrorMessage} from 'formik';
 import { useHistory } from 'react-router-dom'
 import * as yup from 'yup';
@@ -7,9 +7,9 @@ import * as yup from 'yup';
 const LoginForm = () =>{
     const history = useHistory()
     return (  
-        <div>
-            <p className='text-3xl text-purp'>Welcome back to prospa</p>
-            <p className='dashboard-side-text'>An account wih powerful, personalized tools all in one place</p>
+        <div className='w-80'>
+            <p className='text-2xl font-bold text-purp'>Welcome back to prospa</p>
+            <p className='dashboard-side-text mb-6'>An account wih powerful, personalized tools all in one place</p>
             <Formik
                 initialValues={{ email: '', password: '' }}
                 validationSchema={yup.object({
@@ -45,8 +45,10 @@ const LoginForm = () =>{
                            />
                         <ErrorMessage name="password" component="div" className='text-red-700 text-sm'/>
                     </div>
-                    <button type="submit" disabled={isSubmitting} className='rounded bg-pink-600 px-4 text-white h-10 outline-none'>
-                        Submit
+                    <button type="submit" disabled={isSubmitting} 
+                    className='rounded bg-pink-600 px-4 text-white h-10 
+                    focus:outline-none hover:text-pink-600 hover:bg-gray-400'>
+                        Next
                     </button>
                     </Form>
                 )}
