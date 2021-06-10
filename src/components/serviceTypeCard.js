@@ -10,7 +10,7 @@ const ServiceTypeCard = ({data, selected, updateSelected}) => {
         updateSelected(data.title)
     }
     return (
-        <div className={`${showingBox} flex justify-center items-top shadow-lg ml-4 bg-white rounded w-10/12 mb-6`}>
+        <div className={`${showingBox} flex justify-center items-top shadow-lg bg-white rounded w-10/12 mb-6`}>
             <div className={` ${showingSelect} rounded-full shadow h-2 w-2  p-2 mt-1 mx-2`}>
                
             </div>
