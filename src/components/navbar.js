@@ -9,10 +9,10 @@ const Navbar = ({data}) => {
          </div>
          <div className='p-4 flex w-9/12 justify-end'>
            <p className='font-semibold text-purp'>{data.question}</p>
-           <Link to={data.url} className='font-semibold text-pink-600'>{data.action}</Link>
+           <Link to={data.url} className='ml-1 font-semibold text-pink-600'>{data.action}</Link>
          </div>
         </nav>
     )
 }
 
-export default Navbar
+export default Navbar;
