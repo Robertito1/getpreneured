@@ -2,16 +2,15 @@ import React, {useState} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
-const ServiceTypeCard = ({data}) => {
-    const [show, setShow] = useState(false)
-    const showingBenefits = show ? 'hidden' : null
-    const showingSelect = show ? 'bg-gray-200' : 'bg-pink-200'
-    const showingBox = show ?  'border-none': 'border border-solid border-pink-200'
+const ServiceTypeCard = ({data, selected, updateSelected}) => {
+    const showingBenefits = selected !== data.title ? 'hidden' : null
+    const showingSelect = selected !== data.title ? 'bg-gray-200' : 'bg-pink-600'
+    const showingBox = selected !== data.title ? 'border-none': 'border border-solid border-pink-600'
     const toggle = () =>{
-        setShow(show => !show)
+        updateSelected(data.title)
     }
     return (
-        <div className={`${showingBox} flex justify-center items-top shadow-md ml-4 bg-white rounded w-10/12`}>
+        <div className={`${showingBox} flex justify-center items-top shadow-lg ml-4 bg-white rounded w-10/12 mb-6`}>
             <div className={` ${showingSelect} rounded-full shadow h-2 w-2  p-2 mt-1 mx-2`}>
                
             </div>
