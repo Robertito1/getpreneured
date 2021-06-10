@@ -1,55 +1,51 @@
-import React from 'react';
+import React, {useState}  from 'react';
 import {Formik, Form, Field, ErrorMessage} from 'formik';
+import { useHistory } from 'react-router-dom'
 import * as yup from 'yup';
 
+
 const LoginForm = () =>{
-    return (
+    const history = useHistory()
+    return (  
         <div>
             <p className='text-3xl text-purp'>Welcome back to prospa</p>
             <p className='dashboard-side-text'>An account wih powerful, personalized tools all in one place</p>
             <Formik
-                initialValues={{ firstName: '', lastName: '', number: '', email: '', password: '' }}
+                initialValues={{ email: '', password: '' }}
                 validationSchema={yup.object({
-                firstName: yup.string()
-                .required('Firstname is required'),
-                lastName: yup.string()
-                .required('Lastname is required'),
-                number: yup.number()
-                .required('Phonenumber is required'),
                 email: yup.string().email()
                 .required('Email is required'),
+                password: yup.string().required('Password is required')
                 })}
                 onSubmit={(values, { setSubmitting }) => {
                     setTimeout(() => {
-                    alert(JSON.stringify(values, null, 2));
+                        history.push('/dashboard')
+                        console.log(values)
                     setSubmitting(false);
                     }, 400);
                 }}
             >
                 {({ isSubmitting }) => (
                     <Form className='flex flex-col'>
-                    <div className='mb-6 w-72'>
+                    <div className='mb-6'>
                         <Field 
-                        type="text" 
-                        name="firstName" 
-                        className='w-full border-solid border border-pink-600 rounded-md'
-                        placeholder='Firstname'
-                        />
-                        <ErrorMessage name="firstName" component="div" className='text-red-700 text-sm'/>
+                          type="email" 
+                          name="email"
+                          className='w-full input-shadow border-none rounded-md offwhite-background p-3 h-10 outline-none'
+                          placeholder='Email'
+                           />
+                        <ErrorMessage name="email" component="div" className='text-red-700 text-sm'/>
                     </div>
-                    <div>
-                        <Field type="text" name="lastName" className='border-solid border border-pink-600 rounded-md text-pink-600'/>
-                        <ErrorMessage name="lastName" component="div" />
+                    <div className='mb-6'>
+                        <Field 
+                          type="password" 
+                          name="password"
+                          className='w-full input-shadow border-none rounded-md offwhite-background p-3 h-10 outline-none'
+                          placeholder='Password'
+                           />
+                        <ErrorMessage name="password" component="div" className='text-red-700 text-sm'/>
                     </div>
-                    <div>
-                        <Field type="number" name="number" />
-                        <ErrorMessage name="number" component="div" />
-                    </div>
-                    <div>
-                        <Field type="email" name="email" />
-                        <ErrorMessage name="email" component="div" />
-                    </div>
-                    <button type="submit" disabled={isSubmitting}>
+                    <button type="submit" disabled={isSubmitting} className='rounded bg-pink-600 px-4 text-white h-10 outline-none'>
                         Submit
                     </button>
                     </Form>

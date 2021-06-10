@@ -8,7 +8,7 @@ import SavingsAccount from './savingsAccount'
 
 const DashboardDetails = () => {
     return (
-        <div className='p-12 w-full dashboard-background'>
+        <div className='p-12 w-full offwhite-background'>
            <div className='flex justify-between mb-6'>
                <div>
                 <p className='primary-font text-2xl text-purp font-bold'>Welcome back Kathy</p>
@@ -19,7 +19,7 @@ const DashboardDetails = () => {
                     </a>
                 </span>
                </div>
-               <button className='rounded bg-pink-600 px-4 text-white h-10'>
+               <button className='rounded bg-pink-600 px-4 text-white h-10 outline-none'>
                    Add a sub account
                </button>
            </div>
