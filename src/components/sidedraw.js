@@ -10,9 +10,11 @@ import {
      } from '@fortawesome/free-solid-svg-icons'
 import Hamburger from './hamburger'
 
-const SideDraw = () => {
+const SideDraw = ({handleOpenDrawer, open}) => {
+
+    const showSideDrawer = open ? 'hidden' : null;
     return (
-        <div className='pt-3 px-5 flex flex-col fixed cyan h-full w-full z-10 lg:hidden'>
+        <div className= {`pt-10 px-5 flex flex-col fixed cyan h-full w-full z-10 ${showSideDrawer} lg:hidden`}>
            <div className='flex justify-between mb-8'>
                 <p className='primary-font h-10 purple rounded-full p-2 bg-black text-white font-bold'>BN</p>
                 <div>
@@ -25,7 +27,7 @@ const SideDraw = () => {
                     <option value="mercedes">Mercedes</option>
                     <option value="audi">Audi</option>
                 </select>
-                <Hamburger />
+                <Hamburger handleOpenDrawer={ handleOpenDrawer } />
            </div>
            <div className='primary-font text-sm text-purp flex flex-col items-center'>
                <p className='cursor-pointer mb-8 hover:text-purple-900'>
