@@ -8,7 +8,7 @@ import * as yup from 'yup';
 const SignUpForm = () =>{
     const history = useHistory()
     return (
-        <div>
+        <div className='w-72 sm:w-80'>
             <p className='text-2xl text-purp font-bold'>Create your account</p>
             <p className='dashboard-side-text mb-6'>There are various account types to choose from</p>
             <Formik
