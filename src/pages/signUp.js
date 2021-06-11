@@ -8,7 +8,8 @@ const SignUp = () => {
     color: 'cyan',
     question: 'Already a member?',
     action: 'Sign In',
-    url: '/'
+    url: '/',
+    navbarBackground: 'navbarBackgroundCyan'
   }
     return (
         <div>

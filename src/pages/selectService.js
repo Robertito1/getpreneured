@@ -8,7 +8,8 @@ const SelectService = () => {
     color: 'cyan',
     question: 'Already a member?',
     action: 'Sign in',
-    url: '/'
+    url: '/',
+    navbarBackground: 'navbarBackgroundCyan'
   }
     return (
         <div>

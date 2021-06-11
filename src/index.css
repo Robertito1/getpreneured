@@ -34,3 +34,15 @@
  .input-shadow{
   box-shadow: 0px 2px 1px 1px #cacaca;
 }
+
+@media (max-width: 1023px){
+  .navbarBackgroundCyan{
+    background-color: #8972cf;
+  }
+  .navbarBackgroundPurple{
+    background-color: #150a33;
+  }
+  .navbarQuestion{
+    color: white;
+  }
+}
