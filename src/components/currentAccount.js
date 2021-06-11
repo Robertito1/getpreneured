@@ -10,7 +10,7 @@ const CurrentAccount = () => {
                     <p className='primary-font text-base text-purp font-bold'>CURRENT ACCOUNT</p>
                     <p className='primary-font text-base dashboard-side-text'>PROVIDENCE BANK - 9906533917</p>
                 </div>
-                <div className='p-2 text-pink-600'>
+                <div className='flex items-center px-2 h-8 rounded-full bg-purple-200 text-purple-500'>
                   <FontAwesomeIcon icon={faCreditCard} />
                 </div>
             </div>

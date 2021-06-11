@@ -10,7 +10,7 @@ const SavingsAccount = () => {
                     <p className='primary-font text-base text-purp font-bold'>SAVINGS ACCOUNT</p>
                     <p className='primary-font text-base dashboard-side-text'>SUB ACCOUNT - 12346789</p>
                 </div>
-                <div className='p-2'>
+                <div className='flex items-center px-2 h-8 rounded-full bg-green-200 text-green-500'>
                 <FontAwesomeIcon icon={faCreditCard} />
                 </div>
             </div>
