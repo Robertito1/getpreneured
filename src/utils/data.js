@@ -1,8 +1,8 @@
 export const data = {
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June'],
     datasets: [{
         label: '4 of Votes',
-        data: [12, 19, 3, 5, 2, 3],
+        data: [6, 11, 13, 15, 12, 7],
         backgroundColor: [
             'rgba(255, 99, 132, 0.2)',
             'rgba(54, 162, 235, 0.2)',

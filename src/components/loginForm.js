@@ -7,7 +7,7 @@ import * as yup from 'yup';
 const LoginForm = () =>{
     const history = useHistory()
     return (  
-        <div className='w-72 sm:w-80'>
+        <div className='w-72 sm:w-80 mb-24'>
             <p className='text-2xl font-bold text-purp'>Welcome back to prospa</p>
             <p className='dashboard-side-text mb-6'>An account wih powerful, personalized tools all in one place</p>
             <Formik

@@ -14,7 +14,11 @@ const CurrentAccount = () => {
                   <FontAwesomeIcon icon={faCreditCard} />
                 </div>
             </div>
-            <p className='primary-font mt-14 text-3xl text-purp font-semibold'>N814,800</p>
+            <p className='primary-font mt-14 text-3xl text-purp font-semibold'>N814,800.
+                <span className='text-xl font-medium'>
+                    45
+                </span>
+            </p>
         </div>
     )
 }

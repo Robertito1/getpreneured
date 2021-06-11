@@ -18,11 +18,11 @@ const DashboardSideNav = () => {
                     <p className='primary-font text-purp font-black'>Clayvant Inc</p>
                     <p className='primary-font'>manage account</p>
                 </div>
-                <select className='h-8 outline-none' name="cars" id="cars">
+                <select className='h-8 outline-none w-4' name="cars" id="cars">
                     <option value="volvo"></option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
+                    <option value="saab" className='font-bold primary-font text-purp cursor-pointer'>Clayvant Inc</option>
+                    <option value="mercedes" className='primary-font cursor-pointer font-bold primary-font text-purp '>Mercedes Company</option>
+                    <option value="audi" className='primary-font cursor-pointer font-bold primary-font text-purp '>Audi Automation</option>
                 </select>
            </div>
            <div className='primary-font text-sm dashboard-side-text flex flex-col'>
