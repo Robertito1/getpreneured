@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell } from '@fortawesome/free-solid-svg-icons';
+import Hamburger from './hamburger'
 import user from '../images/user.png'
 
 const DashboardNav = () => {
@@ -10,6 +11,7 @@ const DashboardNav = () => {
             <div className='flex items-center'>
               <FontAwesomeIcon icon={faBell} className='h-6 border-solid border w-6'/>
               <img src={user} className='h-8 ml-2 rounded-full' alt='user'/>
+              <Hamburger />
             </div>
         </nav>
     )

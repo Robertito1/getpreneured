@@ -57,7 +57,7 @@ const SignUpForm = () =>{
                             className='w-full input-shadow border-none rounded-md offwhite-background p-3 h-10 outline-none'
                             placeholder='Phonenumber'
                         />
-                        <ErrorMessage name="number" component="div" />
+                        <ErrorMessage name="number" component="div" className='text-red-700 text-sm'/>
                     </div> 
                     <div className='mb-6'>
                         <Field 

@@ -8,10 +8,11 @@ import {
     faUsers,
     faShieldAlt
      } from '@fortawesome/free-solid-svg-icons'
+import Hamburger from './hamburger'
 
-const DashboardSideNav = () => {
+const SideDraw = () => {
     return (
-        <div className='pt-3 px-5 box-shadow flex flex-col fixed h-full w-3/12 hidden lg:block top-0 left-0 z-10'>
+        <div className='pt-3 px-5 flex flex-col fixed cyan h-full w-full z-10 lg:hidden'>
            <div className='flex justify-between mb-8'>
                 <p className='primary-font h-10 purple rounded-full p-2 bg-black text-white font-bold'>BN</p>
                 <div>
@@ -24,8 +25,9 @@ const DashboardSideNav = () => {
                     <option value="mercedes">Mercedes</option>
                     <option value="audi">Audi</option>
                 </select>
+                <Hamburger />
            </div>
-           <div className='primary-font text-sm dashboard-side-text flex flex-col'>
+           <div className='primary-font text-sm text-purp flex flex-col items-center'>
                <p className='cursor-pointer mb-8 hover:text-purple-900'>
                <FontAwesomeIcon icon={faFileInvoiceDollar} />
                {'\u00A0'} Transactions</p>
@@ -50,4 +52,4 @@ const DashboardSideNav = () => {
     )
 }
 
-export default DashboardSideNav
+export default SideDraw;
