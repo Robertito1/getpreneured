@@ -12,9 +12,9 @@ import Hamburger from './hamburger'
 
 const SideDraw = ({handleOpenDrawer, open}) => {
 
-    const showSideDrawer = open ? 'transform translate-x-full' : null;
+    const showSideDrawer = open ? 'transform translate-x-0' : '-translate-x-full';
     return (
-        <div className= {`transition duration-500 ease-in-out pt-10 px-5 flex flex-col fixed cyan h-full w-full z-10 ${showSideDrawer} lg:hidden`}>
+        <div className= {`transition duration-500 ease-in-out transform pt-10 px-5 flex flex-col fixed cyan h-full w-full z-10 ${showSideDrawer} lg:hidden`}>
            <div className='flex justify-between mb-8'>
                 <p className='primary-font h-10 purple rounded-full p-2 bg-black text-white font-bold'>BN</p>
                 <div>

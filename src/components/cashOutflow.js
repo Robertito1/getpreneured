@@ -4,7 +4,7 @@ import { bankFees, marketing, internet, transfers } from '../utils/icons'
 
 const CashOutflow = () => {
     return (
-        <div className='shadow-md ml-4 p-4 bg-white rounded w-5/12'>
+        <div className='shadow-md ml-0 md:ml-4 p-4 bg-white rounded w-11/12 sm:w-10/12 md:w-5/12'>
             <p className='primary-font text-base text-purp font-bold mb-8'>Cash outflow</p>
             <Spendometer item='Bank Fees' progress='w-11/12' icon={bankFees}/>
             <Spendometer item='Internet' progress='w-8/12' icon={internet}/>

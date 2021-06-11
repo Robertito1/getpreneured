@@ -4,7 +4,7 @@ import { faCreditCard } from '@fortawesome/free-solid-svg-icons';
 
 const CurrentAccount = () => {
     return (
-        <div className='shadow-md p-4 bg-white rounded w-6/12'>
+        <div className='shadow-md p-4 bg-white rounded w-11/12 sm:w-10/12 md:w-6/12 mb-4 md:mb-0'>
             <div className='flex justify-between'>
                 <div>
                     <p className='primary-font text-base text-purp font-bold'>CURRENT ACCOUNT</p>
