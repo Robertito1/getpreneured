@@ -14,11 +14,11 @@ const SignUpForm = () =>{
             <Formik
                 initialValues={{ firstName: '', lastName: '', number: '', email: '', password: '' }}
                 validationSchema={yup.object({
-                firstName: yup.string()
+                firstName: yup.string().min(3, 'Name is too short')
                 .required('Firstname is required'),
-                lastName: yup.string()
+                lastName: yup.string().min(3, 'Name is too short')
                 .required('Lastname is required'),
-                number: yup.number()
+                number: yup.number().min(9, 'Number is too short')
                 .required('Phonenumber is required'),
                 email: yup.string().email()
                 .required('Email is required'),
