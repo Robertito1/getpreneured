@@ -25,7 +25,7 @@ const DashboardSideNav = () => {
                     <option value="audi">Audi</option>
                 </select>
            </div>
-           <div className='primary-font text-xl dashboard-side-text flex flex-col'>
+           <div className='primary-font text-sm dashboard-side-text flex flex-col'>
                <p className='cursor-pointer mb-8 hover:text-purple-900'>
                <FontAwesomeIcon icon={faFileInvoiceDollar} />
                {'\u00A0'} Transactions</p>
