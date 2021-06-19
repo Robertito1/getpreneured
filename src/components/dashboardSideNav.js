@@ -13,16 +13,16 @@ const DashboardSideNav = () => {
     return (
         <div className='pt-3 px-5 box-shadow flex flex-col fixed h-full w-3/12 hidden lg:block top-0 left-0 z-10'>
            <div className='flex justify-between mb-8'>
-                <p className='primary-font h-10 purple rounded-full p-2 bg-black text-white font-bold'>BN</p>
+                <p className='primary-font h-10 purple rounded-full p-2 bg-black text-white font-bold'>SM</p>
                 <div>
-                    <p className='primary-font text-purp font-black'>Clayvant Inc</p>
+                    <p className='primary-font text-purp font-black'>Mountain Inc</p>
                     <p className='primary-font'>manage account</p>
                 </div>
                 <select className='h-8 outline-none w-4' name="cars" id="cars">
                     <option value="volvo"></option>
-                    <option value="saab" className='font-bold primary-font text-purp cursor-pointer'>Clayvant Inc</option>
+                    <option value="saab" className='font-bold primary-font text-purp cursor-pointer'>Lighter</option>
                     <option value="mercedes" className='primary-font cursor-pointer font-bold primary-font text-purp '>Mercedes Company</option>
-                    <option value="audi" className='primary-font cursor-pointer font-bold primary-font text-purp '>Audi Automation</option>
+                    <option value="audi" className='primary-font cursor-pointer font-bold primary-font text-purp '>Schneller Auto</option>
                 </select>
            </div>
            <div className='primary-font text-sm dashboard-side-text flex flex-col'>
@@ -45,7 +45,7 @@ const DashboardSideNav = () => {
                <FontAwesomeIcon icon={faMagic} /> 
                {'\u00A0'} Support</p>
            </div>
-           <p className='absolute bottom-0 left-0 m-8 primary-font text-3xl dashboard-side-text'>prospa</p>
+           <p className='absolute bottom-0 left-0 m-8 primary-font text-3xl dashboard-side-text'>guala</p>
         </div>
     )
 }

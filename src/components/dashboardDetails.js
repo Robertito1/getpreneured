@@ -11,7 +11,7 @@ const DashboardDetails = () => {
         <div className='p-1 pb-12 md:p-12 w-full offwhite-background'>
            <div className='flex flex-col md:flex-row items-center justify-center md:justify-between mb-6'>
                <div className='w-full md:w-8/12 '>
-                    <p className='mt-8 primary-font text-xl md:text-2xl text-purp font-bold text-center md:text-left'>Welcome back Kathy</p>
+                    <p className='mt-8 primary-font text-xl md:text-2xl text-purp font-bold text-center md:text-left'>Welcome back Sandy</p>
                     <p className='primary-font px-8 sm:px-0 text-0.5 md:text-xl text-purp font-semibold text-center md:text-left'>
                         Here's what has been happening in the last
                         <span className='ml-1 text-pink-600 underline cursor-pointer'>

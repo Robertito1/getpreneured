@@ -16,16 +16,16 @@ const SideDraw = ({handleOpenDrawer, open}) => {
     return (
         <div className= {`transition duration-500 ease-in-out transform pt-10 px-5 flex flex-col fixed cyan h-full w-full z-10 ${showSideDrawer} lg:hidden`}>
            <div className='flex justify-between mb-8'>
-                <p className='primary-font h-10 purple rounded-full p-2 bg-black text-white font-bold'>BN</p>
+                <p className='primary-font h-10 purple rounded-full p-2 bg-black text-white font-bold'>SM</p>
                 <div>
-                    <p className='primary-font text-purp font-black'>Clayvant Inc</p>
+                    <p className='primary-font text-purp font-black'>Mountain Inc</p>
                     <p className='primary-font'>manage account</p>
                 </div>
                 <select className='h-8 outline-none w-4' name="cars" id="cars">
                     <option value="volvo"></option>
-                    <option value="saab" className='font-bold primary-font text-purp cursor-pointer'>Clay</option>
-                    <option value="mercedes" className='primary-font cursor-pointer font-bold primary-font text-purp'> Company</option>
-                    <option value="audi" className='primary-font cursor-pointer font-bold primary-font text-purp '>Auto</option>
+                    <option value="saab" className='font-bold primary-font text-purp cursor-pointer'>Lighter</option>
+                    <option value="mercedes" className='primary-font cursor-pointer font-bold primary-font text-purp'>Mercedes Company</option>
+                    <option value="audi" className='primary-font cursor-pointer font-bold primary-font text-purp '>Schneller Auto</option>
                 </select>
                 <Hamburger handleOpenDrawer={ handleOpenDrawer } />
            </div>
@@ -49,7 +49,7 @@ const SideDraw = ({handleOpenDrawer, open}) => {
                <FontAwesomeIcon icon={faMagic} /> 
                {'\u00A0'} Support</p>
            </div>
-           <p className='absolute bottom-0 left-0 m-8 primary-font text-3xl dashboard-side-text'>prospa</p>
+           <p className='absolute bottom-0 left-0 m-8 primary-font text-3xl dashboard-side-text'>guala</p>
         </div>
     )
 }
