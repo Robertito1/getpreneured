@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/getpreneured/static/css/main.7b7ebd02.chunk.css",
+    "main.js": "/getpreneured/static/js/main.05878335.chunk.js",
+    "main.js.map": "/getpreneured/static/js/main.05878335.chunk.js.map",
+    "runtime-main.js": "/getpreneured/static/js/runtime-main.bcd888b2.js",
+    "runtime-main.js.map": "/getpreneured/static/js/runtime-main.bcd888b2.js.map",
+    "static/js/2.55387d58.chunk.js": "/getpreneured/static/js/2.55387d58.chunk.js",
+    "static/js/2.55387d58.chunk.js.map": "/getpreneured/static/js/2.55387d58.chunk.js.map",
+    "index.html": "/getpreneured/index.html",
+    "static/css/main.7b7ebd02.chunk.css.map": "/getpreneured/static/css/main.7b7ebd02.chunk.css.map",
+    "static/js/2.55387d58.chunk.js.LICENSE.txt": "/getpreneured/static/js/2.55387d58.chunk.js.LICENSE.txt",
+    "static/media/bank.eba7d82b.png": "/getpreneured/static/media/bank.eba7d82b.png",
+    "static/media/coin.9fea89e8.png": "/getpreneured/static/media/coin.9fea89e8.png",
+    "static/media/user.303a3adc.png": "/getpreneured/static/media/user.303a3adc.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bcd888b2.js",
+    "static/js/2.55387d58.chunk.js",
+    "static/css/main.7b7ebd02.chunk.css",
+    "static/js/main.05878335.chunk.js"
+  ]
+}
