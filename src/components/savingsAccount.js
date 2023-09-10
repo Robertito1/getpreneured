@@ -14,7 +14,7 @@ const SavingsAccount = () => {
                 <FontAwesomeIcon icon={faCreditCard} />
                 </div>
             </div>
-            <p className='primary-font mt-14 text-3xl text-purp font-semibold'>N39,342.
+            <p className='primary-font mt-14 text-3xl text-purp font-semibold'>$390,342.
                 <span className='text-xl font-medium'>
                     45
                 </span>

@@ -7,7 +7,7 @@ const Spendometer = ({item, progress, icon}) => {
             <FontAwesomeIcon icon={icon.component} className={`${icon.style}`}/>
             <p className='dashboard-side-text text-sm'>{item}</p>
             <div>
-                <p className='text-purp font-semibold text-sm'>-N250,000</p>
+                <p className='text-purp font-semibold text-sm'>$250,000</p>
                 <div className='rounded h-2 w-40 bg-gray-400'>
                     <div className={`rounded h-2 ${progress} bg-yellow-400`}></div>
                 </div>

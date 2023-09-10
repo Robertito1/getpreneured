@@ -7,7 +7,7 @@ import {
     faFileInvoiceDollar,
     faUsers,
     faShieldAlt
-     } from '@fortawesome/free-solid-svg-icons'
+} from '@fortawesome/free-solid-svg-icons'
 
 const DashboardSideNav = () => {
     return (
@@ -45,7 +45,7 @@ const DashboardSideNav = () => {
                <FontAwesomeIcon icon={faMagic} /> 
                {'\u00A0'} Support</p>
            </div>
-           <p className='absolute bottom-0 left-0 m-8 primary-font text-3xl dashboard-side-text'>guala</p>
+           <p className='absolute bottom-0 left-0 m-8 primary-font text-3xl dashboard-side-text'>IncomeInsight</p>
         </div>
     )
 }

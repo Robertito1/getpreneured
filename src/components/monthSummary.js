@@ -10,15 +10,15 @@ const MonthSummary = () => {
             <div className='flex justify-between'>
                 <div>
                   <p className='primary-font text-sm dashboard-side-text font-semibold'>Money in</p>
-                  <p className='primary-font text-base text-purp font-bold'>N5,650,000</p>
+                  <p className='primary-font text-base text-purp font-bold'>$650,000</p>
                 </div>
                 <div>
                   <p className='primary-font text-sm dashboard-side-text font-semibold'>Money out</p>
-                  <p className='primary-font text-base text-purp font-bold'>N5,650,000</p>
+                  <p className='primary-font text-base text-purp font-bold'>$150,000</p>
                 </div>
                 <div>
                   <p className='primary-font text-sm dashboard-side-text font-semibold'>Money difference</p>
-                  <p className='primary-font text-base text-purp font-bold'>N5,650,000</p>
+                  <p className='primary-font text-base text-purp font-bold'>$500,000</p>
                 </div>
             </div>
             <Line data={data} />
