@@ -51,7 +51,7 @@
   "devDependencies": {
     "autoprefixer": "^9",
     "cypress": "^7.5.0",
-    "postcss": "^7",
+    "postcss": "^8.4.29",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
 }
