@@ -1,5 +1,6 @@
 {
   "name": "prospa",
+  "homepage":"http://robertito1.github.io/getpreneured",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -27,6 +28,8 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
+    "predeploy" : "yarn run build",
+    "deploy" : "gh-pages -d build",
     "eject": "react-scripts eject",
     "cypress": "./node_modules/.bin/cypress open"
   },
@@ -51,6 +54,7 @@
   "devDependencies": {
     "autoprefixer": "^9",
     "cypress": "^7.5.0",
+    "gh-pages": "^6.0.0",
     "postcss": "^8.4.29",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
